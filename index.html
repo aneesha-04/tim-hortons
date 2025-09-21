@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+
+</head>
+<body class="bg-gray-100">
+    <header class="text-center bg-red-800 px-6 py-4 flex justify-between items-center">
+
+        <nav class="space-x-6">
+      <a href="#menu" class="hover:text-white font-bold">Menu</a>
+     <!---- <a href="#Franchise" class="hover:text-white">Franchise</a> --> 
+      <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+        <h1 class="text-white text-center text-3xl font-bold absolute left-1/2 transform -translate-x-1/2"> Tim Hortons </h1>
+
+    <div class="flex items-center space-x-4">
+      <!-- Cart -->
+      <div class="relative">
+        <i id="cart-icon" class="fas fa-shopping-cart text-white text-2xl cursor-pointer"></i>
+         
+        <span id="cart-count" class="absolute -top-2 -right-3 bg-white text-black text-xs font-bold px-2 py-0.5 rounded-full">0</span>
+      </div>
+      <!-- Sign In -->
+      <button onclick="location.href='signin.html'"  class="bg-white hover:bg-pink-100 text-black font-semibold px-4 py-2 rounded-full">
+        Sign In
+      </button>
+    </div>
+
+    </header>
+    <section class="bg-gray-100 py-20 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-10">
+
+    <!-- Left: Text & Buttons -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-5xl font-bold text-red-900 mb-4">
+        Do it all with the Tims App! 
+      </h2>
+
+      <p class="text-lg font-bold text-red-900 mb-8">
+        Earn points and redeem rewards. Order ahead and pay. Get it delivered or skip the line inside!
+      </p> 
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+        <button onclick="location.href='signup.html'"  class="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-200">
+            
+          Sign Up
+        </button>
+        </div> </div>
+
+
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+      <img src="coffe ecup.avif"  alt="Tims App" >
+    </div>
+</section>
+
+<!-- Coffee Menu Section -->
+<section id="menu" class="bg-gray-200 py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Title -->
+    <h2 class="text-4xl font-bold text-red-800 mb-12 text-center">
+      Our Coffee Menu
+    </h2>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+<!-- 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <img src="Iced-Latte-min.webp" alt="Coffee 1" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-red-900 mb-2">Cappuccino</h3>
+        <p class="text-gray-600 mb-4 text-center">Rich espresso topped with steamed milk foam.</p>
+        <p class="text-red-700 font-bold mb-4">Rs.275</p>
+        <button class="add-to-cart bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold">Add to Cart</button>
+      </div>
+
+<!-- 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <img src="Hazelnut-Iced-Capp-min.webp" alt="Coffee 2" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-red-900 mb-2">Latte</h3>
+        <p class="text-gray-600 mb-4 text-center">Smooth espresso with steamed milk and foam.</p>
+        <p class="text-red-700 font-bold mb-4">Rs.275</p>
+        <button class="add-to-cart bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold">Add to Cart</button>
+      </div>
+
+<!-- 3 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <img src="hot-mocha.webp" alt="Coffee 3" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-red-900 mb-2">Mocha</h3>
+        <p class="text-gray-600 mb-4 text-center">Espresso with chocolate syrup and steamed milk.</p>
+        <p class="text-red-700 font-bold mb-4">Rs.285</p>
+        <button class="add-to-cart bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold">Add to Cart</button>
+      </div>
+<!-- 4 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <img src="Iced-Matcha-Latte-min.webp" alt="Coffee 3" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-red-900 mb-2">Matcha</h3>
+        <p class="text-gray-600 mb-4 text-center">Delicate green tea latte with a smooth, creamy flavor.</p>
+        <p class="text-red-700 font-bold mb-4">Rs.350</p>
+        <button class="add-to-cart bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold">Add to Cart</button>
+      </div>
+<!-- 5 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <img src="tim-bits.avif" alt="Coffee 3" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-red-900 mb-2">Tim Bits</h3>
+        <p class="text-gray-600 mb-4 text-center">Delicate green tea latte with a smooth, creamy flavor.</p>
+        <p class="text-red-700 font-bold mb-4">Rs.80(per piece)</p>
+        <button class="add-to-cart bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold">Add to Cart</button>
+      </div>
+<!-- 6 -->
+  <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <img src="croissant.jpg" alt="Coffee 3" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-red-900 mb-2">Croissant</h3>
+        <p class="text-gray-600 mb-4 text-center">Buttery, flaky croissant filled with savory ingredients for a tasty breakfast treat.</p>
+        <p class="text-red-700 font-bold mb-4">Rs.280</p>
+        <button class="add-to-cart bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold">Add to Cart</button>
+      </div>
+ </div>
+  </div>
+</section>
+
+<section>
+    <div class="bg-gray-300 rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <h3 class="text-xl font-bold text-red-900 mb-2">New Outlet Coming Soon!</h3>
+        <p class="text-gray-600 mb-4 text-center">Sign up to get notified when we open!</p>
+      </div>
+
+</section>
+
+<footer id="contact" class="bg-gray-200 py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+
+    <p class="text-black text-center">
+        Serving your favorite coffee and treats with love. Stay connected for new outlets and offers.
+        <br> </p>
+        <p><b>Connect with Us </b></p>
+          <br>
+          <div class="flex space-x-6">
+        <a href="https://www.instagram.com/timhortonsindia/?hl=en" class="hover:text-white">Instagram</a>
+       <a href="https://twitter.com/TimHortonsIndia/status/1869278615554470331" class="hover:text-white">X</a>    
+       <a href="https://www.facebook.com/TimHortons.India/" class="hover:text-white">Facebook</a>  
+
+    </p> 
+</div>
+<br><br><br>
+    <p class="text-gray-600">
+        TM & © 2025 Tim Hortons USA Inc. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+    
+</body>
+</html>
